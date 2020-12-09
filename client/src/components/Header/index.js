@@ -7,7 +7,7 @@ function Header() {
         <>
             <Container>
                 <Wrapper>
-                    <LinkToPage to='/'><Logo>THE PHONES SHOP</Logo></LinkToPage>
+                    <LinkToPage to='/'><Logo>PHONE CATALOGUE</Logo></LinkToPage>
                     <LinkToPage to='/admin'>Admin</LinkToPage>
                 </Wrapper>
             </Container>
