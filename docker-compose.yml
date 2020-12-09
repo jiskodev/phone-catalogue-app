@@ -1,0 +1,20 @@
+version: "3"
+services:
+  client:
+    build: ./client
+    stdin_open: true
+    ports:
+      - "3001:3000"
+    depends_on:
+      - server
+    networks:
+      - guidesmiths-app
+  server:
+    build: ./server
+    ports:
+      - "4000:4000"
+    networks:
+      - guidesmiths-app
+networks:
+  guidesmiths-app:
+    driver: bridge
